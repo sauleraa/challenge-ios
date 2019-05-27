@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoryCell" id="gTV-IL-0wX" customClass="CategoryCell" customModule="aLodjinha" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="70" height="90"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="70" height="90"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FDc-hs-pdL">
+                        <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="70" id="jYY-DQ-7p6"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="btq-3Z-D4h">
+                        <rect key="frame" x="0.0" y="70" width="70" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="btq-3Z-D4h" secondAttribute="bottom" id="892-fw-XeN"/>
+                <constraint firstAttribute="trailing" secondItem="FDc-hs-pdL" secondAttribute="trailing" id="ICH-ks-CRK"/>
+                <constraint firstItem="FDc-hs-pdL" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="TrB-Xz-9LF"/>
+                <constraint firstItem="btq-3Z-D4h" firstAttribute="top" secondItem="FDc-hs-pdL" secondAttribute="bottom" id="UOf-2A-NPo"/>
+                <constraint firstAttribute="trailing" secondItem="btq-3Z-D4h" secondAttribute="trailing" id="WC8-dC-MwK"/>
+                <constraint firstItem="btq-3Z-D4h" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="aOw-di-aZL"/>
+                <constraint firstItem="FDc-hs-pdL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="sjP-47-hX6"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="85" height="82"/>
+            <connections>
+                <outlet property="imageView" destination="FDc-hs-pdL" id="vpw-5X-2jV"/>
+                <outlet property="lblCategoryName" destination="btq-3Z-D4h" id="swh-p5-DWG"/>
+            </connections>
+            <point key="canvasLocation" x="155.07246376811597" y="155.35714285714286"/>
+        </collectionViewCell>
+    </objects>
+</document>
